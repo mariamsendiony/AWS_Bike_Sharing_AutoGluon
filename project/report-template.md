@@ -1,6 +1,7 @@
 # Report: Predict Bike Sharing Demand with AutoGluon Solution
 #### NAME HERE Mariam Ahmed Elsendiony
-
+### What was the top performing model?
+WeightedEnsembleL3 with RMSE = 0.53433
 ## Initial Training
 ### What did you realize when you tried to submit your predictions? What changes were needed to the output of the predictor to submit your results?
 TODO: Add your explanation
@@ -14,6 +15,7 @@ I started with trying neural networks and forest hyperparameters and from there 
 ### How much better did your model preform after adding additional features and why do you think that is?
 It improved alot,The feature "datetime" was hourly information so I added data for "year", "month", "day", and "hour as distinct features from "datetime". Additionally, "season" and "weather" were transformed to categorical type. 
 Also, the additional features from datetime would have certainly helped the model get more information to learn from.
+the RMSE went from 1.8088 to  0.56963 which is a significant decrease as we know the closer the RMSE to zero the better.almost 68% improvement.
 ## Hyper parameter tuning
 ### How much better did your model preform after trying different hyper parameters?
 It varied depending on the hyper parameters and the number of trials and epochs.
